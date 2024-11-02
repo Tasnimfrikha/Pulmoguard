@@ -90,16 +90,16 @@ for pid in pids:
         cv2.imwrite(name,image)
         print(name)
 
-images = sorted(glob("C:/Users/erzou/Desktop/lUNG_CANCER/test3/train/image/*.png"))
+images = sorted(glob("C:/Users/MSI/Desktop/lUNG_CANCER/test3/train/image/*.png"))
 print(len(images))
-masks = sorted(glob("C:/Users/erzou/Desktop/lUNG_CANCER/test3/train/mask/*.png"))
+masks = sorted(glob("C:/Users/MSI/Desktop/lUNG_CANCER/test3/train/mask/*.png"))
 print(len(masks))
 image_n_path = []
 mask_n_path = []
 image_nod_path = []
 mask_nod_path = []
 
-save_path = "C:/Users/erzou/Desktop/lUNG_CANCER/test3/train"
+save_path = "C:/Users/MSI/Desktop/lUNG_CANCER/test3/train"
 
 for idx, (x, y) in tqdm(enumerate(zip(images, masks)), total=len(images)):
     """ Extracting the dir name and image name """
@@ -118,8 +118,7 @@ for idx, (x, y) in tqdm(enumerate(zip(images, masks)), total=len(images)):
 
 print(mask_nod_path)
 
-path = "C:/Users/erzou/Desktop/lUNG_CANCER/test3/train2"
-path = "C:/Users/erzou/Desktop/lUNG_CANCER/test3/train2"
+
 
 create_dir("test3/train2/image_nod")
 create_dir("test3/train2/mask_nod")
