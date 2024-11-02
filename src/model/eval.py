@@ -35,8 +35,8 @@ if __name__ == "__main__":
         model = tf.keras.models.load_model(r"C:\Users\erzou\Desktop\lUNG_CANCER\files\model.h5")
 
     """ Load the dataset """
-    test_x = sorted(glob(r"C:\Users\erzou\Desktop\lUNG_CANCER\eval_data\image1\*"))
-    test_y = sorted(glob(r"C:\Users\erzou\Desktop\lUNG_CANCER\eval_data\mask1\*"))
+    test_x = sorted(glob(r"C:\Users\MSI\Desktop\lUNG_CANCER\eval_data\image1\*"))
+    test_y = sorted(glob(r"C:\Users\MSI\Desktop\lUNG_CANCER\eval_data\mask1\*"))
     print(f"Test: {len(test_x)} - {len(test_y)}")
 
     SCORE = []
