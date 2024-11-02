@@ -11,7 +11,7 @@ def create_dir(path):
 
 
 
-dataset_path = 'C:/Users/erzou/Desktop/lUNG_CANCER/test3/train2'
+dataset_path = 'C:/Users/MSI/Desktop/lUNG_CANCER/test3/train2'
 (train_x, train_y), (valid_x, valid_y) = load_data(dataset_path, split=0.2)
 
 print("Train: ", len(train_x))
@@ -41,12 +41,11 @@ num_epochs = 100
 model_path = os.path.join("files", "model.h5")
 csv_path = os.path.join("files", "data.csv")
 """ dataset """
-path = 'C:/Users/erzou/Desktop/lUNG_CANCER'
+path = 'C:/Users/MSI/Desktop/lUNG_CANCER'
 dataset_path = os.path.join("new_data3")
 train_path = os.path.join(dataset_path, "train")
 valid_path = os.path.join(dataset_path, "valid")
 print(dataset_path)
-#"C:\Users\erzou\Desktop\lUNG_CANCER\new_data1\train"
 
 train_x, train_y = load_data(train_path)
 train_x, train_y = shuffling(train_x, train_y)
