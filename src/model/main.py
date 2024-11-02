@@ -11,7 +11,6 @@ def create_dir(path):
 
 
 
-dataset_path = 'C:/Users/MSI/Desktop/lUNG_CANCER/test3/train2'
 (train_x, train_y), (valid_x, valid_y) = load_data(dataset_path, split=0.2)
 
 print("Train: ", len(train_x))
